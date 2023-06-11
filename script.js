@@ -25,7 +25,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 /* Dark Mode Toggle */
 
 // Check user's preferred color scheme and set initial toggle state
-if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+// Check if a theme preference is stored in local storage
+const currentTheme = localStorage.getItem("theme");
+
+// If a theme preference exists, apply it
+if (currentTheme) {
+	document.documentElement.setAttribute("data-theme", currentTheme);
+
+	// Update the switch state based on the stored theme
+	if (currentTheme === "light") {
+		document.getElementById("dark-mode-toggle").checked = false;
+	} else if (currentTheme === "dark") {
+		document.getElementById("dark-mode-toggle").checked = true;
+	}
+} else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
 	document.getElementById("dark-mode-toggle").checked = true;
 }
 
