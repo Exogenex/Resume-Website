@@ -20,8 +20,27 @@
     }
 }
 
+@media (prefers-color-scheme: dark) {
+
+    /* Light mode color scheme */
+    :root {
+        --primary-color: #33ddff;
+        --secondary-color: #66e5ff;
+        --tertiary-color: #00aacc;
+        --background-primary: #121f21;
+        --background-secondary: #061313;
+        --accent-color: #f4a261;
+    }
+}
+
 /* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
 }
@@ -136,8 +155,8 @@ a:hover {
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .columns {
@@ -160,7 +179,63 @@ img {
 }
 
 .memes {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Toggle switch container */
+.toggle-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+/* Hide the default checkbox */
+.toggle-container input[type="checkbox"] {
+    display: none;
+}
+
+/* Toggle switch appearance */
+.toggle-container label {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--background-secondary);
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Toggle switch handle */
+.toggle-container label:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--tertiary-color);
+    transition: left 0.3s ease;
+}
+
+/* Toggle switch label styles for unchecked state */
+.toggle-container input[type="checkbox"]:not(:checked)+label {
+    background-color: var(--background-primary);
+}
+
+.toggle-container input[type="checkbox"]:not(:checked)+label:after {
+    left: 2px;
+}
+
+/* Toggle switch label styles for checked state */
+.toggle-container input[type="checkbox"]:checked+label {
+    background-color: var(--accent-color);
+}
+
+.toggle-container input[type="checkbox"]:checked+label:after {
+    left: calc(100% - 18px);
 }
