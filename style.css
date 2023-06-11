@@ -235,7 +235,7 @@ img {
 }
 
 .toggle-container input[type="checkbox"]:not(:checked)+label:after {
-    content: "🌙";
+    content: "☀️";
     left: 2px;
     z-index: 1;
 }
@@ -246,7 +246,7 @@ img {
 }
 
 .toggle-container input[type="checkbox"]:checked+label:after {
-    content: "☀️";
+    content: "🌙";
     left: calc(100% - 18px);
     z-index: 2;
 }
