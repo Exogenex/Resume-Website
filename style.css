@@ -207,33 +207,46 @@ img {
     background-color: var(--background-secondary);
     position: relative;
     cursor: pointer;
+    z-index: 1;
     transition: background-color 0.3s ease;
 }
 
 .toggle-container label:after {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 50%;
     left: 2px;
+    transform: translateY(-50%);
     width: 16px;
     height: 16px;
     border-radius: 50%;
     background-color: var(--tertiary-color);
-    transition: left 0.3s ease;
+    transition: left 0.3s ease, opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    opacity: 0.7;
 }
 
 .toggle-container input[type="checkbox"]:not(:checked)+label {
     background-color: var(--background-primary);
+    z-index: 1;
 }
 
 .toggle-container input[type="checkbox"]:not(:checked)+label:after {
+    content: "🌙";
     left: 2px;
+    z-index: 1;
 }
 
 .toggle-container input[type="checkbox"]:checked+label {
     background-color: var(--accent-color);
+    z-index: 1;
 }
 
 .toggle-container input[type="checkbox"]:checked+label:after {
+    content: "☀️";
     left: calc(100% - 18px);
+    z-index: 2;
 }
