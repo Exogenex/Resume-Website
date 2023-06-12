@@ -178,6 +178,24 @@ img {
     list-style: none;
 }
 
+.profile-picture {
+    float: right;
+    margin: 0 0 1em 1em;
+    width: 200px;
+    height: 200px;
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
+}
+
+@media (max-width: 768px) {
+    .profile-picture {
+        float: none;
+        shape-outside: none;
+        clip-path: none;
+        margin: 0 auto 1em;
+    }
+}
+
 .memes {
     display: flex;
     justify-content: space-between;
