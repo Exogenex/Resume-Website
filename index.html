@@ -3,8 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Micah Pennington - Resume</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <noscript>
+        <style>
+            /* Smooth scrolling without JavaScript */
+            a[href^="#"] {
+                scroll-behavior: smooth;
+            }
+
+            /* Dark mode styles */
+            [data-theme="dark"] {
+                --primary-color: #33ddff;
+                --secondary-color: #66e5ff;
+                --tertiary-color: #00aacc;
+                --background-primary: #121f21;
+                --background-secondary: #061313;
+                --accent-color: #f4a261;
+            }
+
+            [data-theme="light"] {
+                --primary-color: #00aacc;
+                --secondary-color: #00bfe6;
+                --tertiary-color: #0095b3;
+                --background-primary: #faffff;
+                --background-secondary: #cde2e4;
+                --accent-color: #f4a261;
+            }
+        </style>
+    </noscript>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -30,7 +59,7 @@
         <section id="about">
             <h2>About Me</h2>
             <div class="profile-picture">
-                <img src="images/profile-picture.webp" alt="Profile Picture">
+                <img src="images/profile-picture.webp" width="938" height="938" alt="Profile Picture">
             </div>
             <p>
                 I'm an incredibly passionate and driven computer programmer who recently graduated from SPC with an AS
@@ -73,10 +102,10 @@
             <h2>Memes (More come with an interview 😉) [Skills and work experience below]</h2>
             <div class="memes">
                 <div>
-                    <img src="images\Cat-PR-Reject.webp" alt="Cat rejecting PR's from GitHub">
+                    <img src="images\Cat-PR-Reject.webp" width="700" height="700" alt="Cat rejecting PR's from GitHub">
                 </div>
                 <div>
-                    <img src="images\Googling-Skillz.webp" alt="See Googling skills below">
+                    <img src="images\Googling-Skillz.webp" width="1125" height="659" alt="See Googling skills below">
                 </div>
             </div>
         </section>
@@ -334,8 +363,6 @@
     <footer>
         <p>&copy; 2023 Micah Pennington. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
