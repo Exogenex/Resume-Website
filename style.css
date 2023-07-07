@@ -157,6 +157,12 @@ a:hover {
     color: var(--accent-color);
 }
 
+.contact-links a {
+    text-decoration: none;
+    margin-right: 1%;
+  }
+  
+
 .columns {
     display: flex;
     justify-content: space-between;
