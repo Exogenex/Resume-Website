@@ -59,23 +59,26 @@ document.getElementById("dark-mode-toggle").addEventListener("change", function 
 
 // Update colors based on the selected theme
 function updateColors(theme) {
-	const root = document.querySelector(":root");
-	if (theme === "dark") {
-		root.style.setProperty("--primary-color", "#33ddff");
-		root.style.setProperty("--secondary-color", "#66e5ff");
-		root.style.setProperty("--tertiary-color", "#00aacc");
-		root.style.setProperty("--background-primary", "#121f21");
-		root.style.setProperty("--background-secondary", "#061313");
-		root.style.setProperty("--accent-color", "#f4a261");
-	} else {
-		root.style.setProperty("--primary-color", "#00aacc");
-		root.style.setProperty("--secondary-color", "#00bfe6");
-		root.style.setProperty("--tertiary-color", "#0095b3");
-		root.style.setProperty("--background-primary", "#faffff");
-		root.style.setProperty("--background-secondary", "#cde2e4");
-		root.style.setProperty("--accent-color", "#f4a261");
-	}
+    const root = document.querySelector(":root");
+    if (theme === "dark") {
+        root.style.setProperty("--primary-color", "#33ddff");
+        root.style.setProperty("--secondary-color", "#66e5ff");
+        root.style.setProperty("--tertiary-color", "#00aacc");
+        root.style.setProperty("--background-primary", "#121f21");
+        root.style.setProperty("--background-secondary", "#061313");
+        root.style.setProperty("--accent-color", "#f4a261");
+        document.querySelector(".badge-base").setAttribute("data-theme", "dark");
+    } else {
+        root.style.setProperty("--primary-color", "#00aacc");
+        root.style.setProperty("--secondary-color", "#00bfe6");
+        root.style.setProperty("--tertiary-color", "#0095b3");
+        root.style.setProperty("--background-primary", "#faffff");
+        root.style.setProperty("--background-secondary", "#cde2e4");
+        root.style.setProperty("--accent-color", "#f4a261");
+        document.querySelector(".badge-base").setAttribute("data-theme", "light");
+    }
 }
+
 
 // Check for previously selected theme from local storage
 const selectedTheme = localStorage.getItem("theme");
