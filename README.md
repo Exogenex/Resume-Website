@@ -1,6 +1,6 @@
 # My Personal Website
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 This is the open-source repository for my personal website, designed to showcase my code and projects. The website is live and can be accessed at [https://micahpennington.com](https://micahpennington.com).
 
@@ -37,7 +37,7 @@ To get a local copy of this project up and running on your machine, follow these
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/Exogenex/Resume-Website
 ```
 
 2. Navigate to the project directory:
