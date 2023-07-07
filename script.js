@@ -67,7 +67,6 @@ function updateColors(theme) {
         root.style.setProperty("--background-primary", "#121f21");
         root.style.setProperty("--background-secondary", "#061313");
         root.style.setProperty("--accent-color", "#f4a261");
-        document.querySelector(".badge-base").setAttribute("data-theme", "dark");
     } else {
         root.style.setProperty("--primary-color", "#00aacc");
         root.style.setProperty("--secondary-color", "#00bfe6");
@@ -75,10 +74,8 @@ function updateColors(theme) {
         root.style.setProperty("--background-primary", "#faffff");
         root.style.setProperty("--background-secondary", "#cde2e4");
         root.style.setProperty("--accent-color", "#f4a261");
-        document.querySelector(".badge-base").setAttribute("data-theme", "light");
     }
 }
-
 
 // Check for previously selected theme from local storage
 const selectedTheme = localStorage.getItem("theme");
