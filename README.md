@@ -64,9 +64,9 @@ This project is licensed under the MIT License. For more information, please ref
 
 If you have any questions, suggestions, or just want to say hello, you can reach me at:
 
-- Email: [your-email@example.com](mailto:your-email@example.com)
+- Email: [mpennin3@hotmail.com](mailto:mpennin3@hotmail.com)
 - Website: [https://micahpennington.com](https://micahpennington.com)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-linkedin-profile)
-- Twitter: [@your-twitter-handle](https://twitter.com/your-twitter-handle)
+- LinkedIn: [Micah Pennington](https://www.linkedin.com/in/micah-pennington-st-petersburg-fl)
+- Twitter: [@Exogenex](https://twitter.com/Exogenex)
 
 Feel free to reach out, and I'll get back to you as soon as I can!
