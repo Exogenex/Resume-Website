@@ -71,6 +71,10 @@ h1 {
     text-overflow: ellipsis;
 }
 
+h1 a {
+    text-decoration: none;
+}
+
 nav {
     overflow-x: auto;
     padding: 10px 0;
@@ -217,10 +221,15 @@ a:hover {
     }
 }
 
-.memes {
+.general-resume-link {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    z-index: 9999;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .toggle-container {
